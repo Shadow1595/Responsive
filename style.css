@@ -1,0 +1,95 @@
+.boton{
+background: red;
+color: #fff;
+
+}
+
+
+h1{
+background: blue;
+color: #fff;
+font-size: 40px;
+
+}
+
+.caja1, .caja2 {
+
+	width: 45%;
+	float: left;
+	border: 2px solid red;
+	height: 400px;
+
+}
+
+.caja1 {background: blue;}
+.caja2{background: orange;}
+
+
+.caja3, .caja4, .caja5{
+
+	width: 30%;
+	float: left;
+	border: 2px solid red;
+	height: 400px;
+}
+
+.caja3 {background: yellow;}
+.caja4{background: black;}
+.caja5{background: green;}
+
+@media (max-width: 1000px) {
+	.boton {
+		background: blue;
+	}
+}
+
+@media (max-width: 500px) {
+	.boton {
+		background: orange;
+	}
+	.caja1, .caja2, .caja3, .caja4, .caja5{
+		width: 100%;
+	}
+}
+
+@media (max-width: 700px) and (min-width: 501px) {
+	.boton {
+		background: black;
+	}
+}
+
+
+
+@media (max-width: 1000px) {
+	.titulo {
+		background: green;
+	}
+
+@media (max-width: 800px) and (min-width: 500px) {
+	.titulo {
+		background: orange;
+	}
+
+@media (max-width: 500px) {
+	.titulo {
+		background: red;
+		font-size: 20px;
+
+	}
+}	
+
+@media print{
+.titulo {
+	font-size: 140px;
+
+}
+	.boton{
+		display: none;
+	}
+
+
+}
+
+
+
+
